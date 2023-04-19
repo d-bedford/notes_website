@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "bootstrap/base.html"%}
+{% import "bootstrap/wtf.html" as wtf %}
+<html lang="en">
+{% block content%}
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="notes">
+        <h1>Make Note</h1>
+        {{wtf.quick_form(form)}}
+
+    </div>
+
+
+</body>
+{% endblock %}
+</html>

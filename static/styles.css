@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: #333333;
+}
+h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+h1, h2, h3, body {
+    margin: 0;
+    color: white;
+}
+.home{
+    background-color: #333333;
+    height: 100vh;
+    padding-top: 25vh;
+    font-size: 10vw;
+    text-align: center;
+}
+.home-button {
+    margin-top: 3vh;
+    font-size: 2vw;
+
+}
+.register {
+    padding-top: 15vh;
+}
+.form {
+    width: 50vw;
+    margin: auto;
+}
+.message {
+    color: green;
+    text-align: center;
+}
