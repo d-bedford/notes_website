@@ -5,9 +5,10 @@ from flask_ckeditor import CKEditor
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager, login_user, login_required, current_user, UserMixin
 from flask_bcrypt import Bcrypt, generate_password_hash, check_password_hash
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWl9Qd8GH89ihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get("APP_KEY")
 Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
